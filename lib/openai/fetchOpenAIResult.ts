@@ -33,7 +33,7 @@ export async function fetchOpenAIResult(payload: OpenAIStreamPayload, apiKey: st
   const decoder = new TextDecoder()
 
   isDev && console.log({ apiKey })
-  const res = await fetch('https://api.openai.com/v1/chat/completions', {
+  const res = await fetch('https://ma-yy.028256.xyz/v1/chat/completions', {
     headers: {
       'Content-Type': 'application/json',
       Authorization: `Bearer ${apiKey ?? ''}`,
